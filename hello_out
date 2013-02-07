@@ -1,0 +1,5 @@
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ vim hello.asm
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ nasm -f elf64 hello.asm
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ ld -o hello hello.o
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ ./hello
+Hello world!
