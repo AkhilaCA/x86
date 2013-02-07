@@ -1,0 +1,16 @@
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ vim hello.asm
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ nasm -f elf64 hello.asm
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ ld -o hello hello.o
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ ./hello
+Hello world!
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ vim vote.asm
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ nasm -f elf vote.asm
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ gcc -m32 vote.o -o vote.out
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ ./vote.out
+Enter your age:
+12
+You are not eligible for voting
+student@student-HP-Compaq-6200-Pro-MT-PC:~$ ./vote.out
+Enter your age:
+45
+You are eligible for voting
